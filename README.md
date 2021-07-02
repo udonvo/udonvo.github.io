@@ -7,6 +7,9 @@ This is the source code for my personal site.
 ## Directory Structure
 All code and assets in the `/docs` folder is configured to be deployed on each commit to the `main` branch.
 
+## Development Setup
+See the Jekyll installation [instructions](https://jekyllrb.com/) to install Jekyll on your machine.
+
 
 ## Developing
 This site is to be integrated [Jekyll](https://jekyllrb.com/). 
