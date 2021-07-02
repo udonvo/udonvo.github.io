@@ -13,6 +13,23 @@ I'm a software engineer specializing in iOS development.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
     <link rel="stylesheet" href="assets/css/Timeline.css">
     <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+    <style>
+    .btn-transparent-navigation {
+        color: white;
+        background-color: transparent;
+        border-color: #ccc;
+    }
+    .btn-transparent-navigation:hover {
+        color: white;
+        background-color: rgb(255,255,255,0.2);
+        border-color: #ccc;
+    }
+    .btn-transparent-navigation:active {
+        color: white;
+        background-color: rgb(255,255,255,0.6);
+        border-color: #ccc;
+    }
+    </style>
 </head>
 
 <body>
@@ -32,9 +49,13 @@ I'm a software engineer specializing in iOS development.">
             <div class="text">
                 <h2>Hi! I'm Don.</h2>
                 <p>I'm a software engineer specializing in iOS development.<br></p>
-                <div class="row">
-                    <div class="col-5 col-md-4 col-lg-6 offset-md-0"><button class="btn btn-primary" type="button">LinkedIn</button></div>
-                    <div class="col-5 col-md-7 col-lg-6"><button class="btn btn-primary" type="button">Github</button></div>
+                <div style="display:flex;flex-direction:row;justify-content:center;justify-content:space-evenly">
+                    <a href="https://linkedin.com/in/vodonle/">
+                        <button class="btn btn-transparent-navigation" type="button">LinkedIn</button>
+                    </a>
+                    <a href="https://github.com/oddon">
+                        <button class="btn btn-transparent-navigation" type="button">Github</button>
+                    </a>
                 </div>
             </div>
         </section>
