@@ -15,11 +15,18 @@ This site is to be integrated [Jekyll](https://jekyllrb.com/).
 See the Jekyll installation [guide](https://jekyllrb.com/docs/) to install Jekyll on your machine.
 
 ### Site Generation
-Run the following:
-```
+To build build the site from source code run:
+``` 
+cd src
 bundle exec jekyll serve
 ```
-This generates the site within the doc folder, while also hosting the site locally.
+
+To build and deploy the site locally, run:
+``` 
+cd src
+bundle exec jekyll serve
+```
+
 
 <!--
 The site is currently built using [Jekyll](https://jekyllrb.com/), using the [Phantom](https://github.com/jamigibbs/phantom) theme.
