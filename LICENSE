@@ -2,6 +2,21 @@ Attribution 4.0 International
 
 =======================================================================
 
+The initial templates in this project were originally created 
+by BootstrapStudio. See https://github.com/bootstrapstudio/clean-sky-template. 
+This repository (udonvo.github.io) customizes these original templates,
+personalizing them as I saw fit for my personal website. 
+
+Major changes include:
+- Updating the title of the original HTML files to accommodate for my 
+personal information (name, career history, etc)
+- Updating the templated blogs to generate my own personal blog posts
+- Removing unused sections on various pages.
+- Personalizing the color, footer, images, of the templates so that the
+content aligns with my vision of a career portfolio and a blog website.
+
+=======================================================================
+
 Creative Commons Corporation ("Creative Commons") is not a law firm and
 does not provide legal services or legal advice. Distribution of
 Creative Commons public licenses does not create a lawyer-client or
