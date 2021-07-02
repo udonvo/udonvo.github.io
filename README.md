@@ -24,7 +24,7 @@ bundle exec jekyll serve
 To build and deploy the site locally, run:
 ``` 
 cd src
-bundle exec jekyll serve
+bundle exec jekyll build
 ```
 
 
