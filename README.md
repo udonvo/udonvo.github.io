@@ -2,7 +2,7 @@
 
 ## About
 
-This is the source code for my portfolio site. 
+This is the source code for my personal site. 
 <!--
 The site is currently built using [Jekyll](https://jekyllrb.com/), using the [Phantom](https://github.com/jamigibbs/phantom) theme.
 -->
