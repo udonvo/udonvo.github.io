@@ -5,7 +5,7 @@ title: 'Sportify'
 date: 2017-04-19 15:56:00
 categories: development
 tags: Android UCSD
-featured_image: '/img/posts/02-sportify.png'
+featured_image: '/assets/img/projects/02-sportify.png'
 project_link: ''
 button_icon: ''
 button_text: ''

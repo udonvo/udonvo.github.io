@@ -1,3 +1,6 @@
+---
+# empty
+---
 <!DOCTYPE html>
 <html>
 
@@ -35,46 +38,18 @@ I'm a software engineer specializing in iOS development.">
                     <p>The majority of this blog is still under development, as I'm working on integrating this with <a href="https://jekyllrb.com/">Jekyll</a>.&nbsp;</p>
                 </div>
                 <div class="block-content">
+                    {% for post in site.posts %}
                     <div class="clean-blog-post">
                         <div class="row">
-                            <div class="col-lg-5"><img class="rounded img-fluid" src="assets/img/tech/image4.jpg"></div>
+                            <div class="col-lg-5"><img class="rounded img-fluid" src="{{ post.featured_image }}"></div>
                             <div class="col-lg-7">
-                                <h3>Lorem Ipsum dolor sit amet</h3>
-                                <div class="info"><span class="text-muted">Jan 16, 2018 by&nbsp;<a href="#">John Smith</a></span></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p><button class="btn btn-outline-primary btn-sm" type="button">Read More</button>
+                                <h3>{{ post.title }}</h3>
+                                <div class="info"><span class="text-muted">Jan 16, 2018 by&nbsp;<a href="#">Don Vo</a></span></div>
+                                <p>{{ post.lead_text }}</p><button class="btn btn-outline-primary btn-sm" type="button">Read More</button>
                             </div>
                         </div>
                     </div>
-                    <div class="clean-blog-post">
-                        <div class="row">
-                            <div class="col-lg-5"><img class="rounded img-fluid" src="assets/img/tech/image4.jpg"></div>
-                            <div class="col-lg-7">
-                                <h3>Lorem Ipsum dolor sit amet</h3>
-                                <div class="info"><span class="text-muted">Jan 16, 2018 by&nbsp;<a href="#">John Smith</a></span></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p><button class="btn btn-outline-primary btn-sm" type="button">Read More</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="clean-blog-post">
-                        <div class="row">
-                            <div class="col-lg-5"><img class="rounded img-fluid" src="assets/img/tech/image4.jpg"></div>
-                            <div class="col-lg-7">
-                                <h3>Lorem Ipsum dolor sit amet</h3>
-                                <div class="info"><span class="text-muted">Jan 16, 2018 by&nbsp;<a href="#">John Smith</a></span></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p><button class="btn btn-outline-primary btn-sm" type="button">Read More</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="clean-blog-post">
-                        <div class="row">
-                            <div class="col-lg-5"><img class="rounded img-fluid" src="assets/img/tech/image4.jpg"></div>
-                            <div class="col-lg-7">
-                                <h3>Lorem Ipsum dolor sit amet</h3>
-                                <div class="info"><span class="text-muted">Jan 16, 2018 by&nbsp;<a href="#">John Smith</a></span></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p><button class="btn btn-outline-primary btn-sm" type="button">Read More</button>
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </section>

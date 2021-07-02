@@ -5,7 +5,7 @@ title: 'Soccer Game Tracker'
 date: 2017-04-19 15:56:00
 categories: development
 tags: PWA Web UCSD
-featured_image: '/img/posts/03-soccerpwa.png'
+featured_image: '/assets/img/projects/03-soccerpwa.png'
 project_link: ''
 button_icon: ''
 button_text: ''
