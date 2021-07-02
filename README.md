@@ -7,13 +7,19 @@ This is the source code for my personal site.
 ## Directory Structure
 All code and assets in the `/docs` folder is configured to be deployed on each commit to the `main` branch.
 
-## Development Setup
-See the Jekyll installation [guide](https://jekyllrb.com/docs/) to install Jekyll on your machine.
-
 
 ## Developing
 This site is to be integrated [Jekyll](https://jekyllrb.com/). 
-More development guidelines TBD.
+
+### Setup
+See the Jekyll installation [guide](https://jekyllrb.com/docs/) to install Jekyll on your machine.
+
+### Site Generation
+Run the following:
+```
+bundle exec jekyll serve
+```
+This generates the site within the doc folder, while also hosting the site locally.
 
 <!--
 The site is currently built using [Jekyll](https://jekyllrb.com/), using the [Phantom](https://github.com/jamigibbs/phantom) theme.
