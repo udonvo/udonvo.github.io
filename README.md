@@ -7,6 +7,11 @@ This is the source code for my personal site.
 ## Directory Structure
 All code and assets in the `/docs` folder is configured to be deployed on each commit to the `main` branch.
 
+
+## Developing
+This site is to be integrated [Jekyll](https://jekyllrb.com/). 
+More development guidelines TBD.
+
 <!--
 The site is currently built using [Jekyll](https://jekyllrb.com/), using the [Phantom](https://github.com/jamigibbs/phantom) theme.
 -->
