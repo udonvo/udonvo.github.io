@@ -20,7 +20,7 @@ description: "Software Development Engineer"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://donvo.dev" # the base hostname & protocol for your site, e.g. https://example.com
 twitter_username: ''
-github_username: 'oddon'
+github_username: 'udonvo'
 medium_username: ''
 linkedin_username: 'vodonle'
 
@@ -86,28 +86,3 @@ pagination:
   # Optional, the default name of the index file for generated pages (e.g. 'index.html')
   # Without file extension
   indexpage: 'index'
-
-############################################################
-
-### Homepage Landing Text
-landing_title: "Hi! I'm Don."
-landing_subtitle: "I'm a software engineer specializing in iOS development."
-
-### Homepage Details Text
-section_title: 'Portfolio'
-section_subtitle: 'Below are some of the projects that I have worked on in the past few years.'
-
-
-############################################################
-
-### Phantom settings
-footer_text: '© 2020 Don Vo'
-admin_name: 'Don Vo'
-google_analytics: "UA-175540932-1" # Update with your own tracking ID
-enable_contact: false
-
-#### Phantom Navigation menu
-enable_nav: true
-nav_item:
-  - { url: '/', text: 'Home' }
-  - { url: '/about', text: 'About' }
