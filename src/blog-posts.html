@@ -23,8 +23,8 @@ I'm a software engineer specializing in iOS development.">
         <div class="container"><a class="navbar-brand logo" href="#">Don Vo</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="blog-post-list.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog-posts.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact-me.html">Contact Me</a></li>
                 </ul>
             </div>
@@ -35,7 +35,7 @@ I'm a software engineer specializing in iOS development.">
             <div class="container">
                 <div class="block-heading">
                     <h2 class="text-info">Blog Posts</h2>
-                    <p>The majority of this blog is still under development, as I'm working on integrating this with <a href="https://jekyllrb.com/">Jekyll</a>.&nbsp;</p>
+                    <p>This is where I keep my blog, that is just a collection of all sorts various thoughts.</p>
                 </div>
                 <div class="block-content">
                     {% for post in site.posts %}
@@ -44,8 +44,8 @@ I'm a software engineer specializing in iOS development.">
                             <div class="col-lg-5"><img class="rounded img-fluid" src="{{ post.featured_image }}"></div>
                             <div class="col-lg-7">
                                 <h3>{{ post.title }}</h3>
-                                <div class="info"><span class="text-muted">Jan 16, 2018 by&nbsp;<a href="#">Don Vo</a></span></div>
-                                <p>{{ post.lead_text }}</p><button class="btn btn-outline-primary btn-sm" type="button">Read More</button>
+                                <div class="info"><span class="text-muted">{{ post.date }} by&nbsp;<a href="#">{{ post.author }}</a></span></div>
+                                <p>{{ post.lead_text }}</p><button onclick="window.location.href='{{ post.url}}'" class="btn btn-outline-primary btn-sm" type="button">Read More</button>
                             </div>
                         </div>
                     </div>
