@@ -1,3 +1,6 @@
+---
+# Homepage
+---
 <!DOCTYPE html>
 <html>
 
@@ -124,49 +127,25 @@ I'm a software engineer specializing in iOS development.">
                     <p>Below are some of the projects that I have worked on within the last few years.</p>
                 </div>
                 <div class="row justify-content-center">
+                    {% for project in site.projects reversed %}
                     <div class="col-sm-6 col-lg-4">
-                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="assets/img/projects/03-soccerpwa.png">
+                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="{{ project.featured_image }}">
                             <div class="card-body info">
-                                <h4 class="card-title">Soccer Game Tracker</h4>
-                                <p class="card-text">A Progressive Web App to track the status of community soccer games. The app was built in native Javascript, CSS, and HTML as a prototype to conform to RAIL performance standards.</p>
+                                <h4 class="card-title">{{ project.title }}</h4>
+                                <p class="card-text">{{ project.lead_text }}</p>
+                                {% if project.tags != empty %}
                                 <div class="icons">
                                     <div class="row">
-                                        <div class="col" style="background: #ECEFF1;color: #9eb1bd;padding: 0.5em 1.5em;margin: 0.5em;"><span style="padding: 4px 8px 4px 8px;">PWA</span></div>
-                                        <div class="col" style="background: #ECEFF1;color: #9eb1bd;padding: 0.5em 1.5em;margin: 0.5em;"><span style="padding: 4px 8px 4px 8px;">Web</span></div>
-                                        <div class="col" style="background: #ECEFF1;color: #9eb1bd;padding: 0.5em 1.5em;margin: 0.5em;"><span>UCSD</span></div>
+                                        {% for tag in project.tags %}
+                                        <div class="col" style="background: #ECEFF1;color: #9eb1bd;padding: 0.5em 1.5em;margin: 0.5em;"><span style="padding: 4px 8px 4px 8px;">{{ tag }}</span></div>
+                                        {% endfor %}
                                     </div>
                                 </div>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="assets/img/projects/02-sportify.png">
-                            <div class="card-body info">
-                                <h4 class="card-title">Sportify</h4>
-                                <p class="card-text">An Android meet up app whose goal is to connect users who are interested in engaging in outdoor activities with other users who share the same interest.</p>
-                                <div class="icons">
-                                    <div class="row">
-                                        <div class="col" style="background: #ECEFF1;color: #9eb1bd;padding: 0.5em 1.5em;margin: 0.5em;"><span style="padding: 4px 8px 4px 8px;">Android</span></div>
-                                        <div class="col" style="background: #ECEFF1;color: #9eb1bd;padding: 0.5em 1.5em;margin: 0.5em;"><span>UCSD</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="assets/img/projects/01-raytracer-scene6.png">
-                            <div class="card-body info">
-                                <h4 class="card-title">A Simple Ray Tracer</h4>
-                                <p class="card-text">A program built in C++ that parses a scene file of camera, 3D geometry, and light information to produce an image of a scene.</p>
-                                <div class="icons">
-                                    <div class="row">
-                                        <div class="col" style="background: #ECEFF1;color: #9eb1bd;padding: 0.5em 1.5em;margin: 0.5em;"><span style="padding: 4px 8px 4px 8px;">Android</span></div>
-                                        <div class="col" style="background: #ECEFF1;color: #9eb1bd;padding: 0.5em 1.5em;margin: 0.5em;"><span>UCSD</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </section>
