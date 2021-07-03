@@ -13,15 +13,15 @@ selected_nav_id: 'home'
 <body>
 {% include navbar.html selected_nav_id=page.selected_nav_id %}
     <main class="page landing-page">
-        <section class="clean-block clean-hero" style="background-image:url(&quot;assets/img/backgrounds/blue-sky.jpg&quot;);color:rgba(0, 52, 112, 0.4);">
+        <section class="clean-block clean-hero" style="background-image:url(&quot;/assets/img/backgrounds/blue-sky.jpg&quot;);color:rgba(0, 52, 112, 0.4);">
             <div class="text">
                 <h2>Hi! I'm Don.</h2>
                 <p>I'm a software engineer specializing in iOS development.<br></p>
                 <div style="display:flex;flex-direction:row;justify-content:center;justify-content:space-evenly">
-                    <a href="https://github.com/udonvo">
+                    <a href="https://github.com/{{ site.github_username }}/">
                         <button class="btn btn-transparent-navigation" type="button"><i class="fa fa-github fa-lg"></i> Github</button>
                     </a>
-                    <a href="https://linkedin.com/in/vodonle/">
+                    <a href="https://linkedin.com/in/{{ site.linkedin_username }}/">
                         <button class="btn btn-transparent-navigation" type="button"><i class="fa fa-linkedin fa-lg"></i> LinkedIn</button>
                     </a>
                 </div>
@@ -41,7 +41,7 @@ selected_nav_id: 'home'
                             <div class="col-lg-12">
                                 <ul class="list-group timeline">
                                     <li class="list-group-item">
-                                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/1200px-University_of_California,_San_Diego_seal.svg.png"></div>
+                                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="/assets/img/1200px-University_of_California,_San_Diego_seal.svg.png"></div>
                                         <div class="timeline-panel">
                                             <div class="timeline-heading">
                                                 <h4>2014 - 2018</h4>
@@ -53,7 +53,7 @@ selected_nav_id: 'home'
                                         </div>
                                     </li>
                                     <li class="list-group-item timeline-inverted">
-                                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/metron.png"></div>
+                                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="/assets/img/metron.png"></div>
                                         <div class="timeline-panel">
                                             <div class="timeline-heading">
                                                 <h4>2017</h4>
@@ -65,7 +65,7 @@ selected_nav_id: 'home'
                                         </div>
                                     </li>
                                     <li class="list-group-item">
-                                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/workday-logo-workday-11562888164rljyiqp8zf.png"></div>
+                                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="/assets/img/workday-logo-workday-11562888164rljyiqp8zf.png"></div>
                                         <div class="timeline-panel">
                                             <div class="timeline-heading">
                                                 <h4>2018 - Now</h4>
