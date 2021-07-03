@@ -9,7 +9,7 @@ All code and assets in the `/docs` folder is configured to be deployed on each c
 
 
 ## Developing
-This site is to be integrated [Jekyll](https://jekyllrb.com/). 
+This site is built using workflow [Jekyll](https://jekyllrb.com/). 
 
 ### Setup
 See the Jekyll installation [guide](https://jekyllrb.com/docs/) to install Jekyll on your machine.
@@ -18,7 +18,7 @@ See the Jekyll installation [guide](https://jekyllrb.com/docs/) to install Jekyl
 To build build the site from source code run:
 ``` 
 cd src
-bundle exec jekyll serve
+bundle exec jekyll build
 ```
 
 To build and deploy the site locally, run:
@@ -27,36 +27,14 @@ cd src
 bundle exec jekyll build
 ```
 
+### Workflow
+Since Github pages has certain [limitations](https://pages.github.com/versions/) on the plugins available, I've been building this site locally as suggested by Github-Jekyll integration [guidelines](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#plugins). 
+My workflow goes as follows:
+1. Run `bundle exec jekyll build` in the `src` folder
+2. Make changes to a file in `src`
+3. New changes are updated to the `doc` folder
+4. Stop the jekyll build in step 1, and push these changes up (this should the latest changes)
 
-<!--
-The site is currently built using [Jekyll](https://jekyllrb.com/), using the [Phantom](https://github.com/jamigibbs/phantom) theme.
--->
-
-<!--
-## Developing
-
-
-### Setup
-Clone this repo. Run the following on terminal:
-```
-gem install bundler
-bundle install
-bundle exec jekyll serve
-```
-
-### Site Generation
-Run the following
-```
-bundle exec jekyll serve
-```
-
-Running this generates the site's source code in the `/doc` folder, and hosts the site locally.
-
-### Deploying to Github Pages
-Since Github pages doesn't support all of Jekyll's plugins all that well, we'll need to manually perform the bundling to deploy our updated site.
-This repo is currently set up to serve files that are in the `/doc` folder.
-
--->
 
 ## Credits
 
