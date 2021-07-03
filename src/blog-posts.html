@@ -44,7 +44,7 @@ I'm a software engineer specializing in iOS development.">
                             <div class="col-lg-5"><img class="rounded img-fluid" src="{{ post.featured_image }}"></div>
                             <div class="col-lg-7">
                                 <h3>{{ post.title }}</h3>
-                                <div class="info"><span class="text-muted">{{ post.date }} by&nbsp;<a href="#">{{ post.author }}</a></span></div>
+                                <div class="info"><span class="text-muted">{{ post.date | date: "%B %-d, %Y" }} by&nbsp;<a href="#">{{ post.author }}</a></span></div>
                                 <p>{{ post.lead_text }}</p><button onclick="window.location.href='{{ post.url}}'" class="btn btn-outline-primary btn-sm" type="button">Read More</button>
                             </div>
                         </div>
