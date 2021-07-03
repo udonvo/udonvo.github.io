@@ -6,6 +6,7 @@ tags: Web
 featured_image: '/assets/img/blog/hello-world.png'
 lead_text: "Since I came out of college, I've been meaning start some kind of blog -- something that I would to blurb out an array of different thoughts (oh wait, Twitter's there for that) or to document major technical learnings and obstacles in my career..."
 author: Don Vo
+selected_nav_id: 'blog'
 ---
 <!DOCTYPE html>
 <html>
@@ -15,17 +16,7 @@ author: Don Vo
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-        <div class="container"><a class="navbar-brand logo" href="#">Don Vo</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/blog-posts.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact-me.html">Contact Me</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+{% include navbar.html selected_nav_id=page.selected_nav_id %}
     <main class="page blog-post">
         <section class="clean-block clean-post dark">
             <div class="container">

@@ -91,3 +91,12 @@ pagination:
   # Optional, the default name of the index file for generated pages (e.g. 'index.html')
   # Without file extension
   indexpage: 'index'
+
+# Navigation Bar Items:
+# - id - passed in by the navigation bar includer page; the item is active when the id matches
+# - url - where to navigate the user on clicking the navigation item
+# - text - what to display on the narvigation bar
+navbar_items:
+  - { id: 'home', url: '/', text: 'Home' }
+  - { id: 'blog', url: '/blog-posts.html', text: 'Blog' }
+  - { id: 'contact', url: '/contact-me.html', text: 'Contact Me' }
