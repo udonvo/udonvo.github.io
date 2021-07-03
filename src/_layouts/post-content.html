@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+{% include head.html title=page.title %}
+</head>
+
+<body>
+{% include navbar.html selected_nav_id='blog' %}
+    <main class="page blog-post">
+        <section class="clean-block clean-post dark">
+            <div class="container">
+                <div class="block-content">
+                    <div class="post-image" style="background-image:url(&quot;{{ page.featured_image }}&quot;);"></div>
+                    <div class="post-body">
+                        <h3>Hello World!</h3>
+                        <div class="post-info"><span>By {{ page.author }}</span><span>{{ page.date | date: "%B %-d, %Y" }}</span></div>
+
+                        {{ content }}
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% include footer.html %}
+</body>
+</html>
