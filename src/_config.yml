@@ -91,6 +91,14 @@ pagination:
 
 ############################################################
 
+# Exclude these files so they do not copied over to the deployment folder
+exclude:
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - 'udonvo.github.io.gemspec'
+
+############################################################
+
 # Navigation Bar Items:
 # - id - passed in by the navigation bar includer page; the item is active when the id matches
 # - url - where to navigate the user on clicking the navigation item
