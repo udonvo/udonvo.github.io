@@ -13,7 +13,7 @@
                 <div class="block-content">
                     <div class="post-image" style="background-image:url(&quot;{{ page.featured_image }}&quot;);"></div>
                     <div class="post-body">
-                        <h3>Hello World!</h3>
+                        <h3>{{ page.title }}</h3>
                         <div class="post-info"><span>By {{ page.author }}</span><span>{{ page.date | date: "%B %-d, %Y" }}</span></div>
 
                         {{ content }}
