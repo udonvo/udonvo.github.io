@@ -5,7 +5,7 @@ date: 'July 3, 2021'
 categories: blog tech
 tags: Web
 featured_image: '/assets/img/blog/new-site.png'
-lead_text: "In these last few days, I've been trying to revamp my personal site from something that was pretty bare to something that's now fairly presentable. In doing so, I played around with a few different technologies just so I can get something up & running while also being easy for me to maintain in the future..."
+lead_text: "In these last few days, I've been trying to revamp my site from something that was pretty bare to something that's now fairly presentable. In doing so, I played around with a few different technologies just so I can get something up & running while also being easy for me to maintain in the future..."
 author: Don Vo
 ---
 In these last few days, I've been trying to revamp my site from something that was pretty bare to something that's now fairly presentable. In doing so, I played around with a few different technologies just so I can get something up & running while also being easy for me to maintain in the future. I realize that there's a lot of content to cover. The process ended up taking a tad longer than I thought, so I'll be splitting this post into series of back-to-back posts. 
