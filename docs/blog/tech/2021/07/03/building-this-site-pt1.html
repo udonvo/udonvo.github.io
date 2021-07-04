@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Building this Site Part 1 - Revamping with Bootstrap Studio · Don Vo</title>
+    <meta name="description" content="I'm a software engineer specializing in iOS development.">
+    <meta name="keyword" content="Don, Vo, Don Vo, iOS, Workday, UCSD, UC San Diego, Sportify">
+    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="/assets/css/Timeline.css">
+    <link rel="stylesheet" href="/assets/css/vanilla-zoom.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+    .btn-transparent-navigation {
+        color: white;
+        background-color: transparent;
+        border-color: #ccc;
+    }
+    .btn-transparent-navigation:hover {
+        color: white;
+        background-color: rgb(255,255,255,0.2);
+        border-color: #ccc;
+    }
+    .btn-transparent-navigation:active {
+        color: white;
+        background-color: rgb(255,255,255,0.6);
+        border-color: #ccc;
+    }
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+    <div class="container"><a class="navbar-brand logo" href="/">Don Vo</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="navbar-nav ms-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/">
+                    Home
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="/blog/">
+                    Blog
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact-me.html">
+                    Contact Me
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+    <main class="page blog-post">
+        <section class="clean-block clean-post dark">
+            <div class="container">
+                <div class="block-content">
+                    <div class="post-image" style="background-image:url(&quot;/assets/img/blog/new-site.png&quot;);"></div>
+                    <div class="post-body">
+                        <h3>Building this Site Part 1 - Revamping with Bootstrap Studio</h3>
+                        <div class="post-info"><span>By Don Vo</span><span>July 3, 2021</span></div>
+
+                        <p>In these last few days, I’ve been trying to revamp my personal site from something that was pretty bare to something that’s now fairly presentable. In doing so, I played around with a few different technologies just so I can get something up &amp; running while also being easy for me to maintain in the future. I realize that there’s a lot of content to cover. The process ended up taking a tad longer than I thought, so I’ll be splitting this post into series of back to back posts.</p>
+
+<h4 id="previous-iteration">Previous Iteration</h4>
+
+<p>If you looked at my history as a developer, I haven’t really spent too much time beyond my university and internship years professionally working with frontend web development. From school and internship years, I did pick up some basic native web development (HTML, CSS, Vanilla Javascript) skills, but it’s been a couple years since worked in the realm of web development that it’d take me some time of getting used to, to get in the flow of building a professionally looking website. Thankfully, I don’t have to re-invent the wheel. There are lots of templates with basic layouts, that it’d probably make more sense find an open source project out there and adapt it for my personal site.</p>
+
+<p>In my previous iteration of my personal site building, I looked into using <a href="https://jekyllrb.com">Jekyll</a> as a website generator, and with it, were some Jekyll template <a href="https://jekyllthemes.io/">providers</a> that provided some themes that I can just slap onto Github pages. Some of that can be rewritten some of that content metadata so the site was tailored to fit my needs of publishing a personal online portfolio.</p>
+
+<p>While doing some searching, I did find something that I liked. <a href="https://github.com/jamigibbs">Jami Gibbs</a> is a web developed a minimalist looking portfolio template called <a href="https://github.com/jamigibbs/phantom">Phantom</a>, so I pulled from the repository and adapted it to my site. With the amount of content that I had, it was pretty bare, but it was a good starting point for me to start slapping some content that I had on that site.</p>
+
+<p><img width="100%" src="/assets/img/blog/old-site.png" /></p>
+
+<h4 id="new-revamped-site">New Revamped Site</h4>
+
+<p>That previous iteration was all done a year ago, and at this point, I wanted a site with a little more pizzaz.</p>
+
+<p>Not too long ago, I heard about an app called <a href="https://bootstrapstudio.io/">Bootstrap Studio</a>. Bootstrap studio provides drag-and-drop interface and visual IDE that allowed the user to build a site without doing any coding. Being the web development newbie that I am, this opened up a window of opportunity for me to do some quick prototyping, so I tried it out.</p>
+
+<p>The app’s interface took me just about 20 minutes to get used to, but after getting used to that, it was smooth sailing. For anyone familiar with the high level concepts of frontend web development, using Bootstrap Studio should be a breeze. The interface lets you drag and drop components into the DOM hierarchy, and gives you some solid precisions of control over a UI component’s style properties (just like the one you would find in a CSS document). The nifty thing about using this interface is that it provides these style properties all up front, where if you’re coding some styling with CSS, you’re probably going to have to do some Googling to figure out if a property exists and how it works. Additionally, prototyping some changes means moving a slider and toggling a property rather than typing out style rules and reloading the page.</p>
+
+<p>Bootstrap Studio also has some templates that the company <a href="https://github.com/bootstrapstudio">open sources</a>, so this provides some good starting points, which was exactly what I did. After doing the initial prototype of my site within a few hours, I did run into a few limitations. For one, if I wanted to plug Google analytics in, or embed in Google Forms for my contact form in, I couldn’t without exporting the project. The app works great at prototyping but not so great if you want more degree of control over embedding in custom functionality. If you’re developing across multiple pages, it’s confusing to know how code (navigation bars, footers) are shared across these pages.</p>
+
+<p>Once I got the site looking how I wanted it to look in Bootstrap Studio, I exported the project into a folder, and started modifying the code directly, pushing this code up to Github. Next, I copied over all of the content over from my previous site to this new one.</p>
+
+<h4 id="next-up-jekyll-integration">Next Up: Jekyll Integration</h4>
+
+<p>Seems great so far! Since there were template pages around blog posting, I wondered if I should maybe integrate this “hard-coded site” with Jekyll, since Jekyll provides capability for generating blog posts. It might even be useful with Jekyll as I can make this template site more generic and re-usable for other people. I will be covering this in my next post, so stay tuned!</p>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center page-footer" style="padding: 1em;background: rgb(246,246,246);border-color: rgb(208,208,208);">
+        <p style="margin-bottom: 1em;margin-top: 1em;">© 2021 Don Vo</p>
+    </footer>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="/assets/js/vanilla-zoom.js"></script>
+    <script src="/assets/js/theme.js"></script>
+
+</body>
+</html>
