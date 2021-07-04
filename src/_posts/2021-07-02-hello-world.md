@@ -2,7 +2,7 @@
 layout: post-content
 title: 'Hello World!'
 date: 'July 2, 2021'
-categories: blog
+categories: blog tech
 tags: Web
 featured_image: '/assets/img/blog/hello-world.png'
 lead_text: "Since I came out of college, I've been meaning start some kind of blog -- something that I would to blurb out an array of different thoughts (oh wait, Twitter's there for that) or to document major technical learnings and obstacles in my career..."
