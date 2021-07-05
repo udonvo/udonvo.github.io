@@ -105,7 +105,7 @@ exclude:
 # - text - what to display on the narvigation bar
 navbar_items:
   - { id: 'home', url: '/', text: 'Home' }
-  - { id: 'blog', url: '/blog/', text: 'Blog' }
+#  - { id: 'blog', url: '/blog/', text: 'Blog' }
   - { id: 'contact', url: '/contact-me.html', text: 'Contact Me' }
 
 # Footer Text; Displayed on the footer of each page

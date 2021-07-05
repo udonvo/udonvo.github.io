@@ -38,4 +38,4 @@ Once I got the site looking how I wanted it to look in Bootstrap Studio, I expor
 
 Seems great so far! Since there were template pages around blog posting, I wondered if I should maybe integrate this "hard-coded site" with Jekyll, since Jekyll provides the capability for generating blog posts. It might even be useful with Jekyll as I can make this template site more generic and re-usable for other people. I will be covering this in my next post, so stay tuned!
 
-
+For those who are interested, you can find the source code for the site [here](https://github.com/udonvo/udonvo.github.io).
